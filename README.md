@@ -210,15 +210,5 @@ python manage.py runserver
 * Campos `user` e `created_at` são gerados automaticamente.
 * Fácil de estender para adicionar **categorias**, **prioridade**, **data de vencimento** ou outros campos.
 
----
 
-### 🔑 Destaque para recrutadores
 
-* Demonstra **domínio em Django e DRF**
-* Boas práticas de **API REST e autenticação**
-* Estrutura de projeto organizada e escalável
-* Código limpo, com explicações detalhadas de cada trecho
-
----
-
-✨ Pronto para impressionar no GitHub e LinkedIn!
