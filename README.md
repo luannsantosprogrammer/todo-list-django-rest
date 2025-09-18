@@ -127,12 +127,16 @@ URLs da app:
 ```python
 urlpatterns = [
     path("tasks/", TaskListCreateView.as_view(), name='task-list'),
-    path("tasks/<int:pk>/", TaskDetailView.as_view(), name='task-detail')
+    path("tasks/<int:pk>/", TaskDetailView.as_view(), name='task-detail'),
+    path('tasks/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('tasks/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
 ```
 
 * `/tasks/`: lista e cria tarefas.
 * `/tasks/<id>/`: detalhes, atualização e exclusão de tarefas.
+* `path('tasks/token/', TokenObtainPairView.as_view(), name='token_obtain_pair')`: rota de autentificação de usuário.
+* `path('tasks/token/refresh/', TokenRefreshView.as_view(), name='token_refresh')`: rota onde o usuário solicita novo código de acesso
 
 ---
 
